@@ -44,7 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String n = name.getText().toString();
         String p = phone.getText().toString();
         if (!n.isEmpty() && !p.isEmpty()) {
-
+             ContactList cont = new ContactList(n, p);
+            items.add(cont);
+            name.setText("");
+            phone.setText("");
         }
     }
 

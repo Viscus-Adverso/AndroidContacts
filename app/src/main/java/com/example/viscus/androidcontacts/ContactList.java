@@ -7,7 +7,7 @@ package com.example.viscus.androidcontacts;
 public class ContactList {
     String nameText;
     String phoneText;
-    //boolean isRemoved;
+
 
 
     public String getNameText() {
@@ -26,26 +26,17 @@ public class ContactList {
         this.phoneText = phoneText;
     }
 
-    //public boolean isRemoved() {
-    //    return isRemoved;
-   // }
 
-   // public void setRemoved(boolean removed) {
-   //     isRemoved = removed;
-   // }
 
-    public ContactList(String nameText, String phoneText, boolean isRemoved) {
+    public ContactList(String nameText, String phoneText) {
         this.nameText = nameText;
         this.phoneText = phoneText;
-        //this.isRemoved = isRemoved;
+
     }
 
     @Override
     public String toString() {
-        return "ContactList{" +
-                "nameText='" + nameText + '\'' +
-                ", phoneText='" + phoneText + '\'' +
-                //", isRemoved=" + isRemoved +
-                '}';
+        return nameText + '\'' +
+                 "  (" + phoneText +")"+ '\'' ;
     }
 }
